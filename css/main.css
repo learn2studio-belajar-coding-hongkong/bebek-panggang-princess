@@ -1,0 +1,211 @@
+/* CSS RESET */
+
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+/* Global Style */
+
+body {
+    width: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #545454;
+    color: #eae2b7;
+}
+
+a {
+    color: #eae2b7;
+    text-decoration: none;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+/* Header Area */
+
+header {
+    width: 100%;
+    background-color: #545454;    
+}
+
+header a {
+    color: #eae2b7;
+    font-weight: 600;
+}
+
+.logo {
+   display: inline;
+}
+
+.logo img {
+    width: 72px;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
+nav {
+  float: right;
+  padding-top: 23px;
+  padding-bottom: 28px;
+}
+
+.nav-links {
+    margin: 0 15px;
+}
+
+/* Banner Area */
+
+.banner {
+    width: 100%;
+    height: 90vh;
+    position: relative;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+.banner-content {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    position: absolute;  
+    bottom: 0;  
+}
+
+.banner-content-text {
+    background-color: black;    
+}
+
+.banner-content-text-group {
+    position: absolute;
+    top: 30%;
+}
+
+.banner-content-text-group h1 {
+    font-size: 48px;
+}
+
+.banner-content-text-group h3 {
+    font-size: 24px;
+    font-family: cursive;
+    margin-bottom: 36px;
+}
+
+.banner-button {
+    padding: 12px 24px;
+    background-color: #eae2b7;
+    color: #545454;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+/* Menu Area */
+
+.menu {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
+.menu h2 {
+    padding: 36px 0;
+    font-size: 36px;
+}
+
+.menu-slider {
+    position: relative;
+}
+
+.menu-slider-card {
+    width: 24.5%;
+    background-color: #eae2b7;
+    color: #545454;
+    display: inline-block;
+}
+
+.menu-slider-card-details * {
+    color: #545454
+}
+
+.menu-slider-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 12px;
+}
+
+.menu-slider-card-details {
+
+    padding: 36px 0;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    top: 50%;
+    margin-top: -22px;
+    padding: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #545454;
+    transition: 0.5s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: #545454cc;
+}
+
+.menu-slider-slides {
+    width: 100%;
+    margin-bottom: 10px;
+    display: none;
+}
+
+.prev {
+    left: 0;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* Order Area */
+
+.order {
+    width: 100%;
+    height: 90vh;
+    text-align: center;
+}
+
+/* Footer Area */
+
+footer {
+    background-color: #eae2b7;
+    color: #545454;
+    padding: 23.5px 0;
+    text-align: center;
+}
